@@ -1,16 +1,23 @@
 <template>
   <div id="app">
     <homepage></homepage>
+    <concerns category="in-person" type="climate"></concerns>
+    <concerns category="donate" type='healthcare'></concerns>
   </div>
 </template>
 
 <script>
 import Homepage from './components/Homepage'
+import Concerns from './components/Concerns'
 
 export default {
   name: 'app',
   components: {
-    Homepage
+    Homepage,
+    Concerns
+  },
+  mounted () {
+    console.log('Good Morning, How Do I Help?')
   }
 }
 </script>
